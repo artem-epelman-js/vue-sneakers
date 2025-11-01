@@ -1,42 +1,71 @@
-# .
+# 🧢 Vue Sneakers
 
-This template should help get you started developing with Vue 3 in Vite.
+**Vue Sneakers** — це навчальний проєкт на **Vue 3 + TypeScript**, який імітує інтернет-магазин кросівок.  
+Тут можна переглядати товари, додавати їх у вибране, у кошик і оформлювати замовлення.  
+Мета — попрактикуватися з компонентною структурою, маршрутизацією, глобальним станом (Pinia) і інтеграцією з **Supabase**.
 
-## Recommended IDE Setup
+**Ідея**
+Проєкт створений для вдосконалення практичних навичок у Vue 3, Pinia, Tailwind та інтеграції з Supabase.
+Код організовано просто і зрозуміло, з фокусом на реальні кейси фронтенд-розробки.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## 🚀 Технології
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- **TypeScript** — основна мова проєкту
+- **Vue 3 (Composition API)** — ядро застосунку
+- **Pinia** — керування станом
+- **Vue Router** — маршрутизація між сторінками
+- **Tailwind CSS** — швидка та адаптивна стилізація
+- **Supabase** — база даних і бекенд
+- **Vite** — білд-система та девсервер
+- **Bun** — надшвидкий пакетний менеджер і рантайм
 
-## Type Support for `.vue` Imports in TS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+**Структура проєкту**
 
-## Customize configuration
+  public             # піксельні та векторні зображення (піддавались ручному редагуванню)
+  src/ 
+  ┣ components/      # Повторно використовувані компоненти (CartItem, Drawer, Header)
+  ┣ pages/           # Основні сторінки (Home, Favorites, Orders)
+  ┣ stores/          # Сховища стану (Pinia)
+  ┣ lists/           # Кастомні хуки та списки даних
+  ┗ App.vue          # Кореневий компонент застосунку
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+**Функціонал**
 
-```sh
+Перегляд каталогу кросівок
+
+Додавання у кошик та у вибране
+
+Перегляд історії замовлень
+
+Очищення кошика та історії покупок
+
+Збереження даних у Supabase
+
+---
+## ⚙️ Встановлення
+
+```bash
+# Клонування репозиторію
+git clone https://github.com/your-username/vue-sneakers.git
+
+# Перехід у теку проєкту
+cd vue-sneakers
+
+# Встановлення залежностей
 bun install
+
+# Запуск локального сервера
+bun run dev
 ```
 
-### Compile and Hot-Reload for Development
+**‍👨💻 Автор**
 
-```sh
-bun dev
-```
+_Artem Epelman_
+_Frontend Developer_
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-bun run build
-```
+"Код має бути настільки чистим, щоб навіть бекенд його поважав."

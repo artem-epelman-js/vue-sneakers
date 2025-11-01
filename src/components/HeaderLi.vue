@@ -1,4 +1,6 @@
-<script setup>
+<script setup lang="ts">
+
+import {ref} from "vue";
 
 defineProps({
   source:String,
@@ -13,7 +15,3 @@ defineProps({
     <b>{{description}}</b>
   </li>
 </template>
-
-<style scoped>
-
-</style>
