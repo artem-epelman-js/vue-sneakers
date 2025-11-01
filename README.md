@@ -1,3 +1,5 @@
+https://vue-sneakers-lac-one.vercel.app/
+
 # 🧢 Vue Sneakers
 
 **Vue Sneakers** — це навчальний проєкт на **Vue 3 + TypeScript**, який імітує інтернет-магазин кросівок.  
